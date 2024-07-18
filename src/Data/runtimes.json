@@ -1,0 +1,57 @@
+[
+   {
+        "name":"OpenZeppelin Generic Template",
+        "description":"",
+        "tags":"",
+        "audited": true,
+        "company":"OpenZeppelin",
+        "shortdescription":"",
+        "github":"",
+        "id":  "ozGeneric",
+        "use":true
+    },
+    {
+        "name":"OpenZeppelin EVM Template",
+        "description":"",
+        "tags":"",
+        "audited":false,
+        "company":"",
+        "shortdescription":"",
+        "github":"",
+        "id":"ozEvm",
+        "use":true
+    },
+    {
+        "name":"Parity Generic Template",
+        "description":"",
+        "tags":"",
+        "audited":false,
+        "company":"",
+        "shortdescription":"",
+        "github":"",
+        "id":"parityGeneric",
+        "use":true
+    },
+    {
+        "name":"Parity EVM Template",
+        "description":"",
+        "tags":"",
+        "audited":false,
+        "company":"",
+        "shortdescription":"",
+        "github":"",
+        "id": "parityEvm",
+        "use":true
+    },
+    {
+        "name":"Deploy from Github",
+        "description":"",
+        "tags":"",
+        "audited":false,
+        "company":"",
+        "shortdescription":"",
+        "github":"",
+        "id": "github",
+        "use":false
+    }
+]

@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.ant-layout {
+  background-color: var(--background-color);
+}
+
+.ant-layout-header, .ant-layout-footer {
+  background-color: var(--header-footer-background);
+  color: var(--text-color);
+}
+
+.ant-card {
+  background-color: var(--component-background);
+  border-color: var(--border-color-base);
+}
+
+.ant-card .ant-card-head-title {
+  color: var(--text-color);
+}
+
+.ant-typography, .ant-typography-title, .ant-typography-paragraph, .ant-typography-text, .ant-form-item-label > label {
+  color: var(--text-color);
+}
+
+.ant-form-item-label > label {
+  color: var(--text-color);
+}
+
+.ant-input, .ant-select-selector, .ant-btn {
+  background-color: var(--input-background);
+  border-color: var(--input-border-color);
+  color: var(--text-color);
+}
+
+/* Hover and Focus States */
+.ant-input:hover, .ant-select-selector:hover, .ant-btn:hover {
+  border-color: var(--primary-color);
+}
+
+.ant-input:focus, .ant-select-selector:focus, .ant-btn:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.ant-input::placeholder, .ant-select-selector::placeholder {
+  color: var(--text-color-secondary);
+}
+
+/* Primary Button Specific Styles */
+.ant-btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  opacity: 0.85; /* Add a slight transparency on hover/focus */
+}
+
+/* Default Button Styles */
+.ant-btn:hover, .ant-btn:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color); /* Ensure text color adapts to theme */
+}
+
+/* Card Hoverable State */
+.ant-card-hoverable:hover {
+  border-color: var(--primary-color);
+}
+
+/* Specific for Dark Mode */
+[data-theme='dark'] body,
+[data-theme='dark'] .ant-layout,
+[data-theme='dark'] .ant-layout-header,
+[data-theme='dark'] .ant-layout-footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .ant-card,
+[data-theme='dark'] .ant-card-head-title,
+[data-theme='dark'] .ant-typography,
+[data-theme='dark'] .ant-typography-title,
+[data-theme='dark'] .ant-typography-paragraph,
+[data-theme='dark'] .ant-typography-text,
+[data-theme='dark'] .ant-form-item-label > label {
+  background-color: var(--component-background);
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .ant-input,
+[data-theme='dark'] .ant-select-selector,
+[data-theme='dark'] .ant-btn {
+  background-color: var(--input-background);
+  border-color: var(--input-border-color);
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .ant-input:hover,
+[data-theme='dark'] .ant-select-selector:hover,
+[data-theme='dark'] .ant-btn:hover {
+  border-color: var(--primary-color);
+}
+
+[data-theme='dark'] .ant-input:focus,
+[data-theme='dark'] .ant-select-selector:focus,
+[data-theme='dark'] .ant-btn:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+[data-theme='dark'] .ant-btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+[data-theme='dark'] .ant-btn-primary:hover,
+[data-theme='dark'] .ant-btn-primary:focus {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  opacity: 0.85; /* Add a slight transparency on hover/focus */
+}
+
+[data-theme='dark'] .ant-card-hoverable:hover {
+  border-color: var(--primary-color);
+}
+
+.clicked-card {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional, adds a shadow effect */
+}

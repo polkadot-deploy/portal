@@ -1,0 +1,30 @@
+[
+    {
+        "id":"bulk",
+        "name":"Bulk",
+        "use":true,
+        "description":"",
+        "shortdescription":""
+    },
+    {
+        "id":"ondemand",
+        "name":"On Demand",
+        "use":true,
+        "description":"",
+        "shortdescription":""
+    },
+    {
+        "id":"lastic",
+        "name":"Lastic",
+        "use":false,
+        "description":"",
+        "shortdescription":""
+    },
+    {
+        "id":"regionx",
+        "name":"RegionX",
+        "use":false,
+        "description":"",
+        "shortdescription":""
+    }
+]

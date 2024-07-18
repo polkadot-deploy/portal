@@ -1,0 +1,10 @@
+{
+  "wnd": {
+    "chain": "westend2",
+    "metadata": "wnd.scale"
+  },
+  "wndcoretime": {
+    "wsUrl": "wss://sys.ibp.network/coretime-westend",
+    "metadata": "wndcoretime.scale"
+  }
+}

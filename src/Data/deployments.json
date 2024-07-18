@@ -1,0 +1,30 @@
+[
+    {
+        "id":"test",
+        "name":"Test Deployment",
+        "use":true,
+        "description":"",
+        "shortdescription":""
+    },
+    {
+        "id":"ibp",
+        "name":"IBP",
+        "use":false,
+        "description":"",
+        "shortdescription":""
+    },
+    {
+        "id":"tanssi",
+        "name":"Tanssi",
+        "use":false,
+        "description":"",
+        "shortdescription":""
+    },
+    {
+        "id":"zeeve",
+        "name":"Zeeve",
+        "use":false,
+        "description":"",
+        "shortdescription":""
+    }
+]
