@@ -10,6 +10,8 @@ import Chooser from './Components/Chooser'
 import GeneralInfo from './Components/GeneralInfo'
 // import ConnectWallet from './Components/ConnectWalet.jsx'
 
+//Import Api
+import {deploy, projectInfo, apiCheck} from './Services/server.js'
 
 //Import Styles
 import './themes.css'; // Import the custom themes
@@ -64,15 +66,16 @@ const App = () => {
   
   const newName = generateRandomName()
 
-  const onFinish = (values) => {
+  const onFinish = async (values) => {
     console.log('Data Submitted:', {...values, 'address':selectedAccount.address});
     setFormData(values);
+    const response = await deploy({...values, 'addr':selectedAccount.address})
+    console.log(response)
   };
 
   const addToForm = (name, value) => {
     form.setFieldsValue({ [name] : value })
   }
-  
   
   useEffect(() => {
     if (isDarkMode) {
