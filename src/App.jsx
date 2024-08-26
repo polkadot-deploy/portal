@@ -67,10 +67,8 @@ const App = () => {
   const newName = generateRandomName()
 
   const onFinish = async (values) => {
-    console.log('Data Submitted:', {...values, 'address':selectedAccount.address});
     setFormData(values);
     const response = await deploy({...values, 'addr':selectedAccount.address})
-    console.log(response)
   };
 
   const addToForm = (name, value) => {
