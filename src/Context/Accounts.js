@@ -1,5 +1,5 @@
 //Dependencies
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 import { getInjectedExtensions, connectInjectedExtension } from "polkadot-api/pjs-signer"
 
@@ -35,7 +35,7 @@ export function Accounts ({ children }) {
 
 
     return (
-        <AccountsContext.Provider value={{extensions, selectedExtension, getAccounts, connectAccount, accounts, selectedAccount}}>
+        <AccountsContext.Provider value={{extensions, selectedExtension, getAccounts, connectAccount, accounts, selectedAccount, setSelectedExtension}}>
             { children }
         </AccountsContext.Provider>
     );

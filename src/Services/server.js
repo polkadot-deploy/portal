@@ -34,3 +34,21 @@ export const apiCheck = async () => {
     throw error
   }
 }
+
+export const allDeployments = async () => {
+  try {
+    const response = await api.get("/deploy/all")
+    return response
+  } catch (error) {
+    throw error
+  }
+}
+
+export const userDeployments = async (wallet) => {
+  try {
+    const response = await api.get(`/deploy/${wallet}`)
+    return response
+  } catch (error) {
+    throw error
+  }
+}

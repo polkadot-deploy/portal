@@ -1,7 +1,7 @@
 [
     {
         "id":"test",
-        "name":"Test Deployment",
+        "name":"Test",
         "use":true,
         "description":"",
         "shortdescription":""

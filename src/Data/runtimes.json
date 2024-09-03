@@ -1,6 +1,6 @@
 [
    {
-        "name":"OpenZeppelin Generic Template",
+        "name":"OZ Generic",
         "description":"",
         "tags":"",
         "audited": true,
@@ -11,7 +11,7 @@
         "use":true
     },
     {
-        "name":"OpenZeppelin EVM Template",
+        "name":"OZ EVM ",
         "description":"",
         "tags":"",
         "audited":false,
@@ -22,7 +22,7 @@
         "use":true
     },
     {
-        "name":"Parity Generic Template",
+        "name":"Parity Generic",
         "description":"",
         "tags":"",
         "audited":false,
@@ -33,7 +33,7 @@
         "use":true
     },
     {
-        "name":"Parity EVM Template",
+        "name":"Parity EVM",
         "description":"",
         "tags":"",
         "audited":false,
