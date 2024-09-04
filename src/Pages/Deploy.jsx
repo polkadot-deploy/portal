@@ -23,6 +23,7 @@ export const Deploy = () => {
 
   const [paraName, setParaName] = useState(generateRandomName())
   const [token, setToken] = useState("SOME")
+  const [tokenError, setTokenError] = useState("")
 
   const { selectedAccount } = useContext(AccountsContext)
 
@@ -59,12 +60,21 @@ export const Deploy = () => {
   );
 
   const manageDeploy = async () => {
-    const name = paraName ? paraName : generateRandomName();
-    const tok = token ? token : "SOME";
-    const runtime = selectedOptions.runtime
-    const addr = selectedAccount ? selectedAccount.address : "0xNoAccountProvided"
+    if (!token.trim()) {
+      setTokenError("Field can't be empty");
+      return;
+    }
 
-    const response = await deploy({name, token: tok, runtime, addr})
+    if (!selectedAccount){
+      return
+    }
+
+    setTokenError("");
+
+    const name = paraName ? paraName : generateRandomName();
+    const runtime = selectedOptions.runtime
+
+    const response = await deploy({name, token: token, runtime, addr: selectedAccount.address})
     navigate("/mydeployments")
 
   }
@@ -104,8 +114,14 @@ export const Deploy = () => {
                     className="bg-gray-50 text-gray-800 rounded-lg py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-[#E6007A]"
                     placeholder="Enter token name"
                     value={token}
-                    onChange={e => setToken(e.target.value)}
+                    onChange={e => {
+                      setToken(e.target.value)
+                      if (e.target.value.trim()) {
+                        setTokenError("")
+                      }
+                    }}
                   />
+                  {tokenError && <p className="text-red-500 text-xs mt-1">{tokenError}</p>}
                 </div>
                 <div className="w-[20%] pl-2">
                   <label className="block text-sm font-medium mb-2 text-gray-700">Chain ID</label>
@@ -291,6 +307,10 @@ export const Deploy = () => {
             <button onClick={manageDeploy} className="w-full bg-gradient-to-r from-[#E6007A] to-[#6D3AEE] text-white rounded-lg py-3 font-medium shadow-sm">
               Deploy
             </button>
+            {!selectedAccount && (
+              <p className="text-red-500 text-sm text-center mt-2">Please connect a wallet to deploy</p>
+            )}
+
             {/* <button className="w-full bg-gray-200 text-gray-800 rounded-lg py-3 font-medium shadow-sm hover:bg-gray-300 transition-colors">
               Let's talk
             </button> */}
