@@ -3,6 +3,15 @@ import { ChevronRight, X, ChevronLeft } from 'lucide-react';
 
 import wallets from './../Data/wallets.json'
 import { shortenAdd } from './../Utils/shorten-address'
+import talismanLogo from './../public/logos/talisman-logo.jpg'
+import subwalletLogo from './../public/logos/subwallet-logo.jpeg'
+import PJSLogo from './../public/logos/polkadotjs-logo.png'
+
+const images = {
+  "polkadot-js": PJSLogo,
+  "talisman": talismanLogo,
+  "subwallet-js": subwalletLogo
+}
 
 export const WalletModal = ({handleAddressSelect,setSelectedExtension, selectedAccount, selectedExtension, accounts, extensions, setIsModalOpen,handleWalletClick}) => {
     console.log(selectedAccount)
@@ -51,7 +60,7 @@ export const WalletModal = ({handleAddressSelect,setSelectedExtension, selectedA
                   className="w-full mb-2 py-2 px-4 bg-white text-gray-800 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-between"
                 >
                   <div className="flex items-center">
-                    <img src={wallets[extension].logo} alt={wallets[extension].name} className="w-6 h-6 mr-2" />
+                    <img src={images[extension]} alt={wallets[extension].name[0]} className="w-6 h-6 mr-2" />
                     <span>{wallets[extension].name}</span>
                   </div>
                   <ChevronRight size={20} className="text-gray-400" />
