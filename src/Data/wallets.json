@@ -6,9 +6,9 @@
         "name": "MetaMask", "description": "Ethereum and other blockchain networks", "logo": "https://metamask.io/images/favicon-32x32.png" 
     },
     "talisman":{
-        "name": "Talisman", "description": "A wallet for Polkadot and Kusama", "logo": "/logos/talisman.jpg" 
+        "name": "Talisman", "description": "A wallet for Polkadot and Kusama", "logo": "/logos/talisman-logo.jpg" 
     },
     "subwallet-js":{
-        "name": "SubWallet", "description": "Substrate-based wallet", "logo": "/logos/subwallet.png" 
+        "name": "SubWallet", "description": "Substrate-based wallet", "logo": "/logos/subwallet-logo.jpeg" 
     }
 }
