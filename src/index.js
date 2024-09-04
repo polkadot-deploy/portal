@@ -5,20 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 //Context Imports
-// import { ApiConnect } from './Context/ApiConnect'
-// import { RelayData } from './Context/RelayData'
 import { Accounts } from './Context/Accounts'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <ApiConnect> */}
       <Accounts>
-        {/* <RelayData> */}
           <App />
-        {/* </RelayData> */}
       </Accounts>
-    {/* </ApiConnect> */}
   </React.StrictMode>
 );
 
