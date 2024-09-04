@@ -20,7 +20,7 @@ export const MyDeployments = () => {
         }
 
         const intervalId = setInterval(() => {
-            getuserDeployments()
+            selectedAccount && getuserDeployments()
           }, 1000 * 2) // in milliseconds
           return () => clearInterval(intervalId)
     },[selectedAccount])
