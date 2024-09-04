@@ -55,8 +55,8 @@ export const Dashboard = () => {
                     <div className="flex items-start space-x-4">
                     <TestTube size={24} className="text-[#E6007A]" />
                     <div>
-                        <h3 className="font-semibold text-gray-800">Explore Testne</h3>
-                        <p className="text-sm text-gray-600"><a target="_blank" href="https://polkadot.js.org/apps/?rpc=ws://127.0.0.1:9991#/explorer">Fully-integrated Rococo Testnet</a></p>
+                        <h3 className="font-semibold text-gray-800">Explore Testnet</h3>
+                        <p className="text-sm text-gray-600"><a target="_blank" href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdeploypolkadot.xyz/9991#/explorer">Fully-integrated Rococo Testnet</a></p>
                     </div>
                     </div>
                 </div>
